@@ -1,16 +1,16 @@
 from flask import Flask
-api = Flask(__name__)
+app = Flask(__name__)
 
 
-@api.route('/')
+@app.route('/')
 def index():
     return 'Hello, World!'
 
 
-@api.route('/eli')
+@app.route('/eli')
 def eli():
     return 'Hello, eli!'
 
 
 if __name__ == '__main__':
-    api.run(debug=True)
+    app.run(debug=True)
